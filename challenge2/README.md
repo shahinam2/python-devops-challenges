@@ -35,6 +35,9 @@ This script monitors the disk usage of all mounted partitions on your system and
 - `logging`: To log the script's actions and errors.
 
 ###  Notes:
-In `psutil.disk_partitions(all=False)`, the `all` parameter controls which partitions are listed:
-  - `all=False` (default): Only returns physical devices (real disk partitions that are currently mounted).
-  - `all=True`: Returns all mount points, including pseudo, duplicate, and inaccessible filesystems (like `tmpfs`, `proc`, etc).
+- When creating a telegram bot, use a [uuid](https://www.uuidgenerator.net/version4) for username to avoid conflicts with existing bots.  
+Example: `disk_usage_027e2398_bot`.  
+
+- In `psutil.disk_partitions(all=False)`, the `all` parameter controls which partitions are listed:  
+`all=False` (default): Only returns physical devices (real disk partitions that are currently mounted).  
+`all=True`: Returns all mount points, including pseudo, duplicate, and inaccessible filesystems (like `tmpfs`, `proc`, etc).  
