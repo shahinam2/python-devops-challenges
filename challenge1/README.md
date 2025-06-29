@@ -1,8 +1,9 @@
-# Nginx Monitor Script
+## Challenge1: Nginx Monitor Script
 
+### What Problem Does It Solve?
 This script monitors the status of the Nginx service on your system and automatically attempts to restart it if it is not running.
 
-## How It Works
+### How It Works
 
 - The script checks the status of the Nginx service every 30 seconds using `systemctl is-active nginx`.
 - If Nginx is running, it logs this status to `/var/log/nginx_monitor.log` only if the status has changed.
