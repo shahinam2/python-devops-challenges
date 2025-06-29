@@ -3,6 +3,9 @@
 ### What problem does it solve?
 This script monitors the disk usage of all mounted partitions on your system and sends a notification via Telegram if the disk usage exceeds a specified threshold. It uses the `psutil` library to gather disk usage statistics and the `python-telegram-bot` library to send notifications.
 
+### Demo
+![Demo](demo.gif)
+
 ### How It Works
 - The script retrieves all mounted disk partitions using `psutil.disk_partitions()`.
 - For each partition, it checks the disk usage using `psutil.disk_usage()` and compares it against the specified threshold.
